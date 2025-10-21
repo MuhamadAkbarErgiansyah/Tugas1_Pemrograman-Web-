@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PURPLE 'ESSENCE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 80px;
+      z-index: 100;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      filter: brightness(65%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 60px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    /* ===== PRODUCTS SECTION ===== */
+    .products {
+      padding: 100px 80px 60px;
+      background-color: #fff;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 50px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .product-card {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      color: #888;
+      font-size: 15px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* ===== WHATSAPP FLOAT BUTTON ===== */
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 26px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #20ba5a;
+      transform: scale(1.05);
+    }
+
+    .whatsapp-float i {
+      line-height: 0;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a2e0f1e6d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">PURPLE 'ESSENCE</div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">GAME SOME</a></li>
+        <li><a href="#">MAGAZINE</a></li>
+        <li><a href="#">ACCOUNT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- Ganti src ini sesuai lokasi file gambarmu -->
+    <img src="C:\Users\ASUS\Documents\kuliah semester 5\Pemrograman web\image\logo.jpg" alt="Hero Background">
+    <div class="hero-content">
+  
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products">
+    <h2>SHOP THE LATEST RELEASES</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="C:\Users\ASUS\Documents\kuliah semester 5\Pemrograman web\image\p1.jpg" alt="Product 1">
+        <div class="product-info">
+          <h3>TEES I LOVE YOU WHITE</h3>
+          <p>Rp 115.000</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="C:\Users\ASUS\Documents\kuliah semester 5\Pemrograman web\image\p2.jpg" alt="Product 2">
+        <div class="product-info">
+          <h3>TEES UNSEEN WHITE</h3>
+          <p>Rp 115.000</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="C:\Users\ASUS\Documents\kuliah semester 5\Pemrograman web\image\p3.jpg" alt="Product 3">
+        <div class="product-info">
+          <h3>HOODIE COLLOSEUM</h3>
+          <p>Rp 320.000</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="C:\Users\ASUS\Documents\kuliah semester 5\Pemrograman web\image\p4.jpg" alt="Product 4">
+        <div class="product-info">
+          <h3>Track Jacket Core Black</h3>
+          <p>Rp 320.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 PURPLE 'ESSENCE | All Rights Reserved</p>
+  </footer>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
